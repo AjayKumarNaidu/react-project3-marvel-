@@ -1,0 +1,231 @@
+*{
+  margin: 0px;
+}
+
+body{
+  background-color: #FEFDED;
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #A1C398;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marvel-logo{
+  position: relative;
+}
+
+.marvel-logo > img{
+  height: 60px;
+  width: 160px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.tooltip-1{
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 5px 10px;
+  opacity: 0;
+  border-radius: 6px;
+  transition: opacity 0.2s ease;
+}
+
+.marvel-logo:hover .tooltip-1{
+  opacity: 1;
+}
+
+.home{
+  position: relative;
+}
+
+.home > .fa-solid{
+  height: 40px;
+  width: 40px;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.home:hover .tooltip-1{
+  opacity: 1;
+}
+
+header > label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+
+header > label > input{
+  height: 40px;
+  width: 300px;
+  font-size: 1.3rem;
+}
+
+header > label > button{
+  height: 43px;
+  border: 1px none black;
+  width: 100px;
+  font-size: 1.3rem;
+  border-radius: 2px;
+  background-color: rgb(244, 133, 133);
+}
+
+.cart{
+  position: relative;
+}
+
+.fa-cart-shopping{
+  font-size: 2.3rem;
+  margin-left: 20px;
+}
+
+.tooltip-2{
+  font-size: 1.2rem;
+  background-color: red;
+  padding: 0px 4px;
+  border-radius: 15px;
+  position: absolute;
+  top: -13px;
+  right: -7px;
+  color: white;
+}
+
+section{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.content{
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 30px;
+  box-shadow: 1.5px 3px 5px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.content:hover{
+  box-shadow: 1.5px 3px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+.content > p{
+  display: inline-block;
+  padding: 0px;
+  font-size: 15rem;
+  background: url('og-1.jpeg');
+  background-size: cover;
+  background-position: top;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family:sans-serif;
+  font-weight: 800;
+}
+
+.content > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.phase{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.movie{
+  padding-top: 10px;
+  min-height: 460px;
+  width: 340px;
+  background-color: #C6EBC5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.movie > h3{
+  padding: 10px;
+}
+
+.explore{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.explore > p{
+  font-style: oblique;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.explore > button{
+  padding: 5px;
+}
+
+.movie-image{
+  height: 340px;
+  width: 320px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.movie-image-1{
+  height: 90%;
+  width: 90%;
+  
+  object-fit: cover;
+  border-radius: inherit;
+  transition: height 0.7s ,width 0.3s;
+}
+
+.movie:hover .movie-image-1{
+  height: 100%;
+  width: 100%;
+}
