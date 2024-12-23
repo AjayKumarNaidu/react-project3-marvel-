@@ -7,7 +7,7 @@ import { use } from 'react'
 
 function App() {
   const [isPhase,setIsPhase] = useState(false)
-
+  //checking git
   const [wishList,setWishList] = useState(0)
 
   const [wishListArray,setWishListArray] = useState([])
