@@ -139,7 +139,7 @@ section{
   box-shadow: 1.5px 3px 5px 2px rgba(0, 0, 0, 0.8);
 }
 
-.content > p{
+/* .content > p{
   display: inline-block;
   padding: 0px;
   font-size: 15rem;
@@ -151,7 +151,7 @@ section{
   color: transparent;
   font-family:sans-serif;
   font-weight: 800;
-}
+} */
 
 .content > img{
   height: 100%;
